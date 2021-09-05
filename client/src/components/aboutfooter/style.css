@@ -1,0 +1,50 @@
+.card_footer *{
+transition: 0.2s ease
+}
+
+.card_footer{
+  margin:20px;  
+  width:300px;
+  height:300px;
+}
+
+.card_footer br{
+    margin:0;
+
+}
+
+.card_background {
+    position: absolute;
+    margin: 0px;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0,0,0,0.6);
+    opacity:0;
+    z-index:1;
+}
+
+.card_footer:hover .card_background{
+    opacity:1;
+}
+
+.card_footer .card_cont{
+    margin:20px;
+    position: absolute;
+    z-index: 2;
+    padding-right: 20px;
+    width:260px;
+
+}
+
+@media(max-width:320px){
+    .card_footer{
+        margin:10px;
+        width:250px;
+        height:300px;
+
+
+    }
+    .card_footer .card_cont{
+        width:230px;
+    }
+}

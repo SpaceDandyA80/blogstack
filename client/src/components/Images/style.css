@@ -1,0 +1,11 @@
+.image_gallery{
+    font-family: 'Lora', serif;
+}
+
+.home_footer_cards{
+    display:flex;
+    flex-wrap: wrap;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+}

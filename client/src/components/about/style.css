@@ -1,0 +1,44 @@
+.about{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 50px 10px;
+    
+}
+
+.about_me_info{
+    color:lightgray;
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.about_me_info h1{
+    font-size: 3.3rem;
+}
+
+
+.empty{
+    background: black;
+    width: 100vw;
+  height:65px;
+position: fixed;
+bottom:0;
+}
+
+@media(max-width:500px){
+    .about_me_info{
+        left:10px;
+    }
+    .about_me_info h1{
+        font-size:2rem;
+    }
+    .about_me_text {
+        width:85vw;
+        font-size:small;
+    }
+}
