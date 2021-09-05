@@ -10,7 +10,7 @@ import { useContext } from "react";
 import { Context } from "./context/Context";
 
 //Link needs to be added soon
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, HashRouter, Route } from "react-router-dom";
 
 function App() {
   const { user } = useContext(Context);
@@ -18,7 +18,7 @@ function App() {
     <Router>
       <TopBar />
 
-      <Switch>
+      <HashRouter>
         <Route exact path="/">
           <Home />
         </Route>
@@ -32,7 +32,7 @@ function App() {
         <Route path="/post/:postId">
           <Single />
         </Route>
-      </Switch>
+      </HashRouter>
     </Router>
   );
 }
