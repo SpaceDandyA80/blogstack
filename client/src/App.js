@@ -19,17 +19,25 @@ function App() {
       <TopBar />
 
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/gh-pages-url">
           <Home />
         </Route>
-        <Route path="/login">{user ? <Home /> : <Login />}</Route>
-        <Route path="/register"> {user ? <Home /> : <Register />}</Route>
-        <Route path="/about">
+        <Route path="/gh-pages-url/login">{user ? <Home /> : <Login />}</Route>
+        <Route path="/gh-pages-url/register">
+          {" "}
+          {user ? <Home /> : <Register />}
+        </Route>
+        <Route path="/gh-pages-url/about">
           <About />
         </Route>
-        <Route path="/Write">{user ? <Write /> : <Register />} </Route>
-        <Route path="/settings"> {user ? <Settings /> : <Register />} </Route>
-        <Route path="/post/:postId">
+        <Route path="/gh-pages-url/Write">
+          {user ? <Write /> : <Register />}{" "}
+        </Route>
+        <Route path="/gh-pages-url/settings">
+          {" "}
+          {user ? <Settings /> : <Register />}{" "}
+        </Route>
+        <Route path="/gh-pages-url/post/:postId">
           <Single />
         </Route>
       </Switch>

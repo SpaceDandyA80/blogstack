@@ -42,19 +42,6 @@ app.use("/api/posts", postsRoute);
 app.use("/api/categories", categoryRoute);
 
 
-/* route requests for static files to appropriate directory */
-app.use('/public', express.static(__dirname + '/public'));
-
-/* other routes defined before catch-all */
-app.get('/some-route', (req, res) => {
-  res.send('ok')
-})
-
-/* final catch-all route to index.html defined last */
-app.get('/*', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
-})
-
 app.listen("5000", () => {
   console.log("we're in ...");
 });
