@@ -19,15 +19,12 @@ function App() {
       <TopBar />
 
       <Switch>
-        <Route exact path="/blogstack/">
+        <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/blogstack/login">{user ? <Home /> : <Login />}</Route>
-        <Route path="/blogstack/register">
-          {" "}
-          {user ? <Home /> : <Register />}
-        </Route>
-        <Route path="/blogstack/about">
+        <Route path="/login">{user ? <Home /> : <Login />}</Route>
+        <Route path="/register">{user ? <Home /> : <Register />}</Route>
+        <Route path="/about">
           <About />
         </Route>
         <Route path="/Write">{user ? <Write /> : <Register />} </Route>
